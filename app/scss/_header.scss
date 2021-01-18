@@ -1,0 +1,32 @@
+.header {
+  background-color: gray;
+  height: 3rem;
+  width: 100%;
+  z-index: 5;
+  &__logo {
+
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    color: $white;
+    font-family: $alata;
+    font-weight: $alataWeight;  
+  }
+
+  &__hamburger {
+
+    > span {
+      color: $white;
+      margin-bottom: 0.25rem;
+    }
+  }
+  
+  &__menu {
+
+  }
+}

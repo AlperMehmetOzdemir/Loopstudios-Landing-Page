@@ -1,0 +1,85 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size:  $fontSize;
+  color: $white;
+  font-family: $alata;
+  font-weight: $alataWeight;
+  line-height: 1.3;
+  background-color: gray;
+  text-align: center;
+
+  @include breakpoint-up(large){
+    text-align: left;
+  }
+}
+
+// Text
+h1,h2,h3 {
+  font-family: $josefin;
+  font-weight: $josefinWeight;
+  font-size: 2.5rem;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+  color : $white;
+}
+
+// Spacing
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+//Flexbox 
+.flex{
+  display: flex;
+  
+  &-col {
+    flex-direction: column;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+// Buttons
+button, .button {
+  display: inline-block;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+// Visibility
+.mobile-only {
+  @include breakpoint-up(large){
+    display: none;
+  }
+}
+
+.desktop-only {
+  @include breakpoint-down(medium){
+    display:none;
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  background-color: $black;
+  color: $white;
+  font-family: $alata;
+  font-weight: $alataWeight;
+  padding: 1rem;
+
+  &__logo{
+    margin: 0 auto;
+    width: fit-content;
+    >img {
+      width: 10rem;
+    }
+  }
+  &__links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    > a, a:visited, a:hover {
+      color: $white;
+    }
+    a:not(:last-child){
+      margin-bottom: 1.25rem;
+    }
+  }
+  &__social {
+    margin-bottom: 1.25rem;
+
+    a:not(:last-child){
+      margin-right: 0.625rem;
+    }
+
+  }
+  &__copyright {
+    color: $veryDarkGray
+    
+  }
+}
